@@ -30,7 +30,7 @@ export const login = async (req, res) => {
 			{ expiresIn: "1d" }
 		);
 
-		sendLog("Usuário " + user.name + " logou");
+		sendLog("Usuário " + user.name + " logou no sistema!");
 		res.status(200).json(token);
 	} catch (error) {
 		sendError(error, "login", "login.js");
